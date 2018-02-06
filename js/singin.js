@@ -29,7 +29,7 @@ next.on("click", function (event) {
     event.preventDefault();
     makeCode();
     alert('Tu código: ' + 'LAB-' + code);
-    window.location.href = 'form.html';
+    window.location.href = 'verify.html';
 });
 
 var code ;
