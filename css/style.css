@@ -6,7 +6,7 @@
 #splash {
   width: 100%;
   height: 100vh;
-  display: inline-flex;
+  display: inline-block;
   top: 0;
   left: 0;
   bottom: 0;
@@ -42,6 +42,6 @@
 }
 
 .btn-outline-secondary {
-  margin-top: 560px;
+  margin-top: 500px;
   position: relative;
 }
