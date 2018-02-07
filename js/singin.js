@@ -18,7 +18,7 @@ $("#phone").keypress(function () {
 function makeid() {
     var text = "";
     var possible = "0123456789";
-    for (var i = 0; i < 5; i++)
+    for (var i = 0; i < 3; i++)
         text += possible.charAt(Math.floor(Math.random() * possible.length));
 
     return text;
