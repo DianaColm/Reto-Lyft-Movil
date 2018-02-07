@@ -10,8 +10,6 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
   <!--Enlazando CSS -->
   <link rel="stylesheet" href="../css/main.css">
-  <!--Enlazando CSS para las banderas -->
-  <link rel="stylesheet" href="../build/css/intlTelInput.css">
   <title>Lyft</title>
 </head>
 <body>
@@ -19,27 +17,43 @@
   <header>
     <div class="container-fluid">
       <div class="row centered">
-        <div class="col-xs-1 container-button centered">
-          <a href="sing-up.html"> <i class="fa fa-angle-left"></i></a>
+        <div class="col-xs-2 container-button centered">
+          <a href="sing-up.html"><i class="fa fa-angle-left"></i></a>
         </div>
-      <div class="col-xs-10">
-          <h2 class="text-center">Verify phone number</h2>
-          <span class="text-center">Join now for free ride credit</span>
+        <div class="col-xs-12 text-center">
+          <h2 class="">Verify phone number</h2>
+          <span class="">Join now for free ride credit</span>
+          <hr>
+        </div>
       </div>
-    </header>
+    </div>
+  </header>
 
-    <div class="row centered">
-      <div class="text-center">
-        <span>Enter the code sent to +52</span>
+    <div class="row main">
+      <div class="col-12">
+        <form class="needs-validation text-center" validate>
+          <p>Enter your code</p>
+          <span>LAB- </span>
+          <input type="number" class="d-inline" id="next" placeholder="Ej. 123">
+          <p>Enter the code send to +52</p>
+        </form>
       </div>
     </div>
 
-    <button class="btn btn-lg btn-block text-uppercase disabled next" type="button">next</button>
+  <div class="row text-center">
+    <div class="col-12">
+      <button class="btn btn-secondary text-uppercase resend" type="button">Resend code</button>
+    <br>
+    <br>
+    </div>
+  </div>
+
+    <button class="btn btn-lg btn-block text-uppercase disabled next"  type="button">Next</button>
 
 
   <!--Enlace CDN jQuery -->
   <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-  <!-- Enlace JavaScript -->
-  <script src="../js/singin.js"></script>
+  <!-- Enlace JavaScript-->
+  <script src="../js/verify.js"></script>
   </body>
 </html>

@@ -1,15 +1,9 @@
-/*plugin de banderas*/
-$(document).ready(function () {
-    $('#phone').intlTelInput();
-});
-
-/*se declara el valor del boton next */
 var next = $('.next');
-/*el botón estara desactivado hasta que se introduzca un numero de 10 digitos */
-$("#phone").keypress(function () {
-    if ((this.value).length === 9) {
+/*el botón estara desactivado hasta que se introduzca un numero de 3 digitos */
+$("#next").keypress(function () {
+    if ((this.value).length === 2) {
         next.removeClass('disabled');
-    } else if ((this.value).length !== 10) {
+    } else if ((this.value).length !== 3) {
         next.addClass('disabled');
     }
 });
@@ -24,12 +18,13 @@ function makeid() {
     return text;
 };
 
-/*Se genera código y se muestra en un alert*/
-next.on("click", function (event) {
+/*boton resend*/
+var resend = $('.resend');
+resend.on("click", function (event) {
     event.preventDefault();
     makeCode();
     alert('Tu código: ' + 'LAB-' + code);
-    window.location.href = 'verify.html';
+    /*window.location.href = 'verify.html';*/
 });
 
 var code ;
